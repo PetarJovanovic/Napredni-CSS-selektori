@@ -1,0 +1,33 @@
+/*Stilizacija Google linkova*/
+a[href*="google"] {
+    color: green;
+}
+        
+/*Stilizacija Link-group linka. 2 primera kako je moguce uraditi*/
+a[href*="link"] {
+    color: red;
+}
+
+/*a[target="_blank"] {
+    color: red;
+}*/
+
+/*Stilizacija Paragrafa u second-div*/
+#second-div p:nth-child(even) {
+    color: red;
+}
+
+#second-div p:nth-child(odd) {
+    color: blue;
+}
+        
+/*Stilizacija "Paragraph 2" i "Paragraph 3"*/
+#first-div > p::after {
+    content: " - NEW";
+    color: yellow;
+}
+
+/*Stilizacija "Paragraph 10"*/
+body > p:last-child:hover {
+    font-style: italic;
+}
